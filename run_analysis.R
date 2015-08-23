@@ -64,3 +64,5 @@ for(Subject in 1:30) {
         }
 }
 write.csv(resultSet, 'resultSet.csv')
+Result <-read.csv("resultSet.csv")
+write.table(Result,file="tidy data set.txt",row.names = FALSE)
